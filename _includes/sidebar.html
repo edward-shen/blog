@@ -1,0 +1,14 @@
+<aside>
+    <h3>Hello.</h3>
+    <img src="/assets/avatar.png" />
+    <h4>Edward Shen</h4>
+    <p>
+        I'm a student at Northeastern University majoring in CS. I post and record my projects here.
+    </p>
+    {% for site_page in site.pages %} {% if site_page.title %}
+    <a href="{{ site_page.url | relative_url }}">{{ site_page.title | escape }}</a>{%endif %}{% endfor %}
+    <br />
+    {% include icon-github.html username=site.github_username %}
+    {% include icon-twitter.html username=site.twitter_username %}
+    <p class="rss-subscribe">Subscribe via <a href="{{ "/feed.xml" | relative_url }}">RSS</a>.</p>
+</aside>

@@ -1,0 +1,24 @@
+.highlight {
+    background-color: #333;
+    border-radius: 8px;
+    color: white;
+    table {
+        table-layout: fixed;
+    }
+    .gutter {
+        background-color: #888;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        .lineno {
+            margin-left: 8px;
+            margin-right: 4px;
+            pre {
+                vertical-align: top;
+            }
+        }
+    }
+    .code {
+        padding-left: 4px;
+        padding-right: 8px;
+    }
+}
