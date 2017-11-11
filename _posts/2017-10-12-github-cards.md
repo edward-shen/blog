@@ -23,7 +23,7 @@ Or, if I don't want to use my own repos, just pass in the author:
 {% raw %}{% ghcards jekyll 3 %}{% endraw %}
 ```
 
-It uses Github's new APIv4 that utilizes GraphQL, a relatively novel API format by Facebook. I personally think it's a strong contender to replace API calls for many larger organizations, since, when specififed correctly, lightens the load for both the server and the client.
+It uses Github's new APIv4 that utilizes GraphQL, a relatively novel API format by Facebook. I personally think it's a strong contender to replace API calls for many larger organizations, since, when specified correctly, lightens the load for both the server and the client.
 
 On the user side (that is, the people who view this blog), they'll have a small JS that will pull and cache the latest stars and forks from Github, so they'll see the latest data, even when the last time the website was regenerated was 20 years ago.
 
@@ -80,7 +80,7 @@ GRAPHQL
 ```
 Now, to those familiar to Ruby, you'd realize that everything's in a String, and that fancy `<<-'GRAPHQL'` and `GRAPHQL` was just syntatic sugar for a multiline string. But to me and my ~~IDE~~ text-editor, it looked like some sort of escaped text. So I had no idea whether it meant we needed to declare some global Ruby variables or it would interpret using `$id` for variables instead.
 
-**\<aside>** Why does Ruby even have that stupid `<<-'GRAPHQL'` sugar anyways? How is that even considered synatatic sugar‽**\</aside>**
+**\<aside>** What's up with and their `<<-'GRAPHQL'` sugar anyways? How is that even considered synatatic sugar‽**\</aside>**
 
 Once I figured what that meant, the rest was easy to understand. But it took quite a bit of time to figure that out.
 
