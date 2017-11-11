@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-11-11T15:03:12-05:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Anonymous Lambda</title><subtitle>A blog about maximizing assertions, minimizing randomness, and then doing none of that.
+</subtitle><entry><title type="html">Jekyll Plugin: Github Cards</title><link href="http://0.0.0.0:4000/17/10/github-cards" rel="alternate" type="text/html" title="Jekyll Plugin: Github Cards" /><published>2017-10-12T21:54:00-04:00</published><updated>2017-10-12T21:54:00-04:00</updated><id>http://0.0.0.0:4000/17/10/github-cards</id><content type="html" xml:base="http://0.0.0.0:4000/17/10/github-cards">&lt;p&gt;I need to make a confession: I finished the magic mirror back in mid-August. I’ll be posting the final update to my mirror whenever I have time (as you can see I am &lt;em&gt;terrible&lt;/em&gt; with this concept of blogging), but for now I want to write a post-mortem, to say, of the Jekyll plugin I just made:&lt;/p&gt;
+
+&lt;section class=&quot;gh-cards&quot;&gt;
+
+      &lt;article class=&quot;gh-card&quot; data-username=&quot;edward-shen&quot; data-repo=&quot;github-cards&quot;&gt;
+        &lt;section class=&quot;gh-card-top&quot;&gt;
+          &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;&lt;img class=&quot;gh-card-avatar&quot; src=&quot;https://avatars1.githubusercontent.com/u/6173958?v=4&quot; alt=&quot;User icon&quot; /&gt;&lt;/a&gt;
+          &lt;section class=&quot;gh-card-info&quot;&gt;
+            &lt;a href=&quot;https://github.com/edward-shen/github-cards&quot;&gt;&lt;h4&gt;github-cards&lt;/h4&gt;&lt;/a&gt;
+            &lt;div class=&quot;gh-card-details&quot;&gt;
+              &lt;p&gt;Created by &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;edward-shen&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Last updated on &lt;a href=&quot;https://github.com/edward-shen/github-cards/commits/master&quot;&gt;2017-10-23&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          
+      &lt;section class=&quot;gh-card-lang&quot;&gt;
+        &lt;p class=&quot;text-grey&quot;&gt;Ruby&lt;/p&gt;
+        &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+          &lt;circle cx=&quot;7&quot; cy=&quot;7&quot; r=&quot;7&quot; fill=&quot;#701516&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/section&gt;
+        &lt;/section&gt;
+
+        &lt;p class=&quot;gh-card-desc&quot;&gt;Generates your Github projects in HTML for your (static) website to use from a predefined template.&lt;/p&gt;
+
+        &lt;section class=&quot;gh-card-bottom text-grey&quot;&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;star-count&quot;&gt;0&lt;/p&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 10 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;fork-count&quot;&gt;0&lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/article&gt;
+
+&lt;/section&gt;
+
+&lt;p&gt;If you’re wondering what it does, congratulations, you just saw what it does! It’s an easy-to-style github card liquid tag! I can easily call a bunch of cards, or a single card, depending on what params I put in.&lt;/p&gt;
+
+&lt;p&gt;For example, the one you just saw was the following on my end:&lt;/p&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ghcards&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;github-cards&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I can also call up to 30 (but seriously, who needs more than 30?) repos at a time just by saying the following:&lt;/p&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ghcards&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Or, if I don’t want to use my own repos, just pass in the author:&lt;/p&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ghcards&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;jekyll&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It uses Github’s new APIv4 that utilizes GraphQL, a relatively novel API format by Facebook. I personally think it’s a strong contender to replace API calls for many larger organizations, since, when specififed correctly, lightens the load for both the server and the client.&lt;/p&gt;
+
+&lt;p&gt;On the user side (that is, the people who view this blog), they’ll have a small JS that will pull and cache the latest stars and forks from Github, so they’ll see the latest data, even when the last time the website was regenerated was 20 years ago.&lt;/p&gt;
+
+&lt;p&gt;I personally will be using this in the future, and I hope many come to adopt it as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-went-right&quot;&gt;What went right&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-graphql&quot;&gt;1. GraphQL&lt;/h3&gt;
+
+&lt;p&gt;GraphQL was an absolute breeze to work with. I loved the concept getting everything I wanted and &lt;em&gt;only&lt;/em&gt; the things I wanted, rather that getting everything and then discarding the unnecessary parts. It’s cleaner code, lighter on the network, and best of all, it feels elegant. GraphQL seems like a natural progression from a clunkly API protocol (aka JSON via RESTful calls) to a streamlined and optimized solution. I simply don’t want to go back. I’ve experienced hell when an single api call (read: the only api call) returns literally everything you need to know, everything you don’t need to know, and &lt;em&gt;then&lt;/em&gt; some. Filtering, parsing JSON, debugging, and more all took so much time out of development to just figuring out &lt;em&gt;What the fuck is this, and how do I properly parse it?&lt;/em&gt; I just wished that it had more adoption. As of right now, you need to rely on an library client (that isn’t trivial to minimally reproduce) that, while excellent in itself, is rather large.&lt;/p&gt;
+
+&lt;p&gt;Using it is rather simple. You ask the server for the template schema it uses, make a schema of your own that follows that template, and then send the request. It’s done in this way so that the client can verify that the schema that you generate is valid against the schema the server has, so you don’t need to worry about getting invalid data. If it’s wrong, you’ll know it won’t work before you ship it to production.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-caching&quot;&gt;2. Caching&lt;/h3&gt;
+
+&lt;p&gt;Implementing a caching function to my small JS code was actually surprisingly easy. Perhaps it was because I was used to JavaScript, or perhaps the documentation was easier to understand. Regardless, I was able to implement a rudamentary form of caching within 10 minutes.&lt;/p&gt;
+
+&lt;p&gt;For reference, my plugin actually doesn’t add any javascript at all, nor does it require any. That’s the beauty of this liquid tag–it only generates HTML. However, a side effect of this is that the numbers (forks and stars) that should be dynamic text, are static. Initially a friend offered a quick, easy (and maybe sarcastic) fix: iframes, but I heavily opposed this idea. It went against one of the prime reason to even use this plugin. Instead, I opted to create a script that pulls data from Github’s RESTful API (APIv3). It worked, but with the test page I was using (~27 repos), I quickly reached the rate limit for my IP–3 refreshes, in fact. Caching the data, and only reloading after a certain time, would allow both other repos to be updated and prevent already viewed to waste precious calls.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-styling&quot;&gt;3. Styling&lt;/h3&gt;
+
+&lt;p&gt;You might expect styling to be easy, but in a sense, it was quite difficult. Actually, I even had to ask my friendo &lt;a href=&quot;https://github.com/Aralisza&quot;&gt;Aralisza&lt;/a&gt; to help with styling. I had 4 objectives when creating the style hooks and styling the template design:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Design a HTML structure that was easy to modify and style&lt;/li&gt;
+  &lt;li&gt;Copy the Github style as much as possible&lt;/li&gt;
+  &lt;li&gt;Not make it ugly.&lt;/li&gt;
+  &lt;li&gt;Add useful and meaningful links to the repo card&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;(1.) and (2.) were relatively easy to accomplish, and (3.) naturally came from following (2.), but (4.) was difficult. At times, I didn’t know how much would be enough: &lt;em&gt;Should I make every piece of text interactive? Or should I just keep it to the basics?&lt;/em&gt; I actually had considered linking the language indicator to the trending repos in that language because it seemed like neat idea but decided against it when I realized it wasn’t helpful to whomever was looking at that card. I also had the idea of making the stars and forks indicators interactive, but that idea quickly ended when I realized that Github’s fork and star buttons weren’t simple GET calls. That might be a feature in the future, but for now, it seems a little beyond what was needed.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-went-wrong&quot;&gt;What went wrong&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-learning-ruby&quot;&gt;1. Learning Ruby&lt;/h3&gt;
+
+&lt;p&gt;Man, oh man, learning Ruby was tougher than expected. The way I generally learn a language is to dive deep into a project, and come back out with some understanding of the syntax and kinks the language has. With Ruby, I had expected it to be easy to learn, like Python, since it boasted the ease of use of its language. But then I saw some interesting quirks:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt; is a normal variable.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@test&lt;/code&gt; is an instance variable. I understood this as a field in other languages.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Test&lt;/code&gt; must be just another variable, right? Nope, it’s a constant. I believe this is the correct way to style a constant, and not the normal &lt;code class=&quot;highlighter-rouge&quot;&gt;UPPERCASE&lt;/code&gt; other languages use. Okay, that’s a little new, but nothing to get fussy over about.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@@test&lt;/code&gt; is a… instance instance variable? It’s kinda like a pointer to a pointer in C++ right? Nope, class variable. Apparently, it’s a variable that all inherited classes can access as well. I guess this would be nice in some cases, but I don’t think I’ll be using this.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$test&lt;/code&gt; Uh… the only experience I have with variables starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; was back in PHP, and everyone hates PHP so I doubt it’d be just a variable. Turns out, it’s a global variable. Why do you need to declare that in a function? Why not just define a variable outside any function or class, and just let that have global scope? What happens if you rely on a &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; global variable? Why does Ruby even encourage usage of the global namespace‽&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;2-graphql-and-ruby&quot;&gt;2. GraphQL and Ruby&lt;/h3&gt;
+
+&lt;p&gt;Global variables me to my next confusion: GraphQL variables. Remember how GraphQL works? Turns out, you can also define variables in your schema, so that you can use the same schema format for different requests! How intuitive! But guess how those variables are declared in GraphQL? Yup, just like how Ruby declares global variables.&lt;/p&gt;
+
+&lt;p&gt;Man, you have no idea how confusing it was to a Ruby newb to see this example code in the &lt;code class=&quot;highlighter-rouge&quot;&gt;graphql-client&lt;/code&gt; docs:&lt;/p&gt;
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;no&quot;&gt;HeroNameQuery&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SWAPI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;parse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;'GRAPHQL'&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+  query($id: ID!) {
+    hero(id: $id) {
+      name
+    }
+  }
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;GRAPHQL&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Now, to those familiar to Ruby, you’d realize that everything’s in a String, and that fancy &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;-'GRAPHQL'&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GRAPHQL&lt;/code&gt; was just syntatic sugar for a multiline string. But to me and my &lt;del&gt;IDE&lt;/del&gt; text-editor, it looked like some sort of escaped text. So I had no idea whether it meant we needed to declare some global Ruby variables or it would interpret using &lt;code class=&quot;highlighter-rouge&quot;&gt;$id&lt;/code&gt; for variables instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;lt;aside&amp;gt;&lt;/strong&gt; Why does Ruby even have that stupid &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;-'GRAPHQL'&lt;/code&gt; sugar anyways? How is that even considered synatatic sugar‽&lt;strong&gt;&amp;lt;/aside&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once I figured what that meant, the rest was easy to understand. But it took quite a bit of time to figure that out.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-jekyll-gems-and-testing&quot;&gt;3. Jekyll, Gems, and Testing&lt;/h3&gt;
+&lt;p&gt;I still don’t know how to properly perform unit tests on my code, since when I try to run my code separately from Jekyll, it fails on me (since Jekyll is undefined). Not only that, I still don’t quite understand how to make Gems either. That shouldn’t be too difficult, it’s just I don’t have the time (nor mental fortitude at this point) to figure out. I just wish it didn’t require all this thinking to begin with, but I guess that’s part of my job and not theirs.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I’ve come to realize that I don’t like Ruby. I will probably never touch this language again (unless the stack I work with uses Ruby on Rails), and I will gladly file this project on &lt;em&gt;Things I don’t want to do again&lt;/em&gt;. But hey, the result was pretty cool, and I’m not going to lie, I’m pretty proud at the end result. This project was overall a fun project, and the problems that occured weren’t too bad either. It’s just, I don’t like the Ruby ecosystem at all. You win some, you lose some.&lt;/p&gt;</content><author><name></name></author><summary type="html">I need to make a confession: I finished the magic mirror back in mid-August. I’ll be posting the final update to my mirror whenever I have time (as you can see I am terrible with this concept of blogging), but for now I want to write a post-mortem, to say, of the Jekyll plugin I just made:</summary></entry><entry><title type="html">Magic Mirror: Module interlude</title><link href="http://0.0.0.0:4000/17/06/magic-mirror-interlude" rel="alternate" type="text/html" title="Magic Mirror: Module interlude" /><published>2017-06-14T17:56:00-04:00</published><updated>2017-06-14T17:56:00-04:00</updated><id>http://0.0.0.0:4000/17/06/magic-mirror-interlude</id><content type="html" xml:base="http://0.0.0.0:4000/17/06/magic-mirror-interlude">&lt;p&gt;I took a break from physically developing my magic mirror (not because the parts aren’t here yet or anything) to work on creating some module that I wanted but didn’t exist. Take, for example, an module that would allow you to view information about a single station in Boston, and what modes of transportation would arrive there at what (predicted time). Seems pretty cool, right? Turns out, I couldn’t find one. So I instead of just being ok with not having one, I made one instead.&lt;/p&gt;
+
+&lt;p&gt;I present to you, MMM-MBTA.&lt;/p&gt;
+
+&lt;p&gt;There’s a lot more information on the github page, so I’ll just leave my repo card below.&lt;/p&gt;
+
+&lt;section class=&quot;gh-cards&quot;&gt;
+
+      &lt;article class=&quot;gh-card&quot; data-username=&quot;edward-shen&quot; data-repo=&quot;MMM-MBTA&quot;&gt;
+        &lt;section class=&quot;gh-card-top&quot;&gt;
+          &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;&lt;img class=&quot;gh-card-avatar&quot; src=&quot;https://avatars1.githubusercontent.com/u/6173958?v=4&quot; alt=&quot;User icon&quot; /&gt;&lt;/a&gt;
+          &lt;section class=&quot;gh-card-info&quot;&gt;
+            &lt;a href=&quot;https://github.com/edward-shen/MMM-MBTA&quot;&gt;&lt;h4&gt;MMM-MBTA&lt;/h4&gt;&lt;/a&gt;
+            &lt;div class=&quot;gh-card-details&quot;&gt;
+              &lt;p&gt;Created by &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;edward-shen&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Last updated on &lt;a href=&quot;https://github.com/edward-shen/MMM-MBTA/commits/master&quot;&gt;2017-06-14&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          
+      &lt;section class=&quot;gh-card-lang&quot;&gt;
+        &lt;p class=&quot;text-grey&quot;&gt;JavaScript&lt;/p&gt;
+        &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+          &lt;circle cx=&quot;7&quot; cy=&quot;7&quot; r=&quot;7&quot; fill=&quot;#f1e05a&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/section&gt;
+        &lt;/section&gt;
+
+        &lt;p class=&quot;gh-card-desc&quot;&gt;MagicMirror² module for the Massachusetts Bay Transportation Authority&lt;/p&gt;
+
+        &lt;section class=&quot;gh-card-bottom text-grey&quot;&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;star-count&quot;&gt;1&lt;/p&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 10 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;fork-count&quot;&gt;0&lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/article&gt;
+
+&lt;/section&gt;
+
+&lt;p&gt;The total time from production to (effecitvely) completed was about one day and 6.5 hrs, including sleep, eating, etc. I was surprised at how quickly I was able to finish this. MBTA’s API rules are pretty nice though—they give a public dev api key for anyone to use. Unfortunately, they also limit each type of polling request to 1 per every 10 seconds.&lt;/p&gt;
+
+&lt;p&gt;But that wasn’t all. I also wanted to have a paging feature, where you could basically have app pages like you do on most modern smart phones.&lt;/p&gt;
+
+&lt;p&gt;Considering the implementation constraints of the MagicMirror platform, I realized I needed two modules, one that does the page switching, and one that displays what page you’re on.&lt;/p&gt;
+
+&lt;p&gt;As of writing this post, I got the display helper module done. I’m currently taking a break to write up this post, but I’ll edit this when I have it done.&lt;/p&gt;
+
+&lt;p&gt;But for now, have another card:&lt;/p&gt;
+
+&lt;section class=&quot;gh-cards&quot;&gt;
+
+      &lt;article class=&quot;gh-card&quot; data-username=&quot;edward-shen&quot; data-repo=&quot;MMM-page-indicator&quot;&gt;
+        &lt;section class=&quot;gh-card-top&quot;&gt;
+          &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;&lt;img class=&quot;gh-card-avatar&quot; src=&quot;https://avatars1.githubusercontent.com/u/6173958?v=4&quot; alt=&quot;User icon&quot; /&gt;&lt;/a&gt;
+          &lt;section class=&quot;gh-card-info&quot;&gt;
+            &lt;a href=&quot;https://github.com/edward-shen/MMM-page-indicator&quot;&gt;&lt;h4&gt;MMM-page-indicator&lt;/h4&gt;&lt;/a&gt;
+            &lt;div class=&quot;gh-card-details&quot;&gt;
+              &lt;p&gt;Created by &lt;a href=&quot;https://github.com/edward-shen&quot;&gt;edward-shen&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Last updated on &lt;a href=&quot;https://github.com/edward-shen/MMM-page-indicator/commits/master&quot;&gt;2017-06-18&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          
+      &lt;section class=&quot;gh-card-lang&quot;&gt;
+        &lt;p class=&quot;text-grey&quot;&gt;JavaScript&lt;/p&gt;
+        &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+          &lt;circle cx=&quot;7&quot; cy=&quot;7&quot; r=&quot;7&quot; fill=&quot;#f1e05a&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/section&gt;
+        &lt;/section&gt;
+
+        &lt;p class=&quot;gh-card-desc&quot;&gt;MagicMirror² module to display what page you're on.&lt;/p&gt;
+
+        &lt;section class=&quot;gh-card-bottom text-grey&quot;&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 14 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;star-count&quot;&gt;2&lt;/p&gt;
+          &lt;svg aria-hidden=&quot;true&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 10 16&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z&quot; /&gt;
+          &lt;/svg&gt;
+          &lt;p class=&quot;fork-count&quot;&gt;0&lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/article&gt;
+
+&lt;/section&gt;</content><author><name></name></author><summary type="html">I took a break from physically developing my magic mirror (not because the parts aren’t here yet or anything) to work on creating some module that I wanted but didn’t exist. Take, for example, an module that would allow you to view information about a single station in Boston, and what modes of transportation would arrive there at what (predicted time). Seems pretty cool, right? Turns out, I couldn’t find one. So I instead of just being ok with not having one, I made one instead.</summary></entry><entry><title type="html">Magic Mirror: Sensors</title><link href="http://0.0.0.0:4000/17/06/magic-mirror-sensors" rel="alternate" type="text/html" title="Magic Mirror: Sensors" /><published>2017-06-11T23:35:00-04:00</published><updated>2017-06-11T23:35:00-04:00</updated><id>http://0.0.0.0:4000/17/06/magic-mirror-sensors</id><content type="html" xml:base="http://0.0.0.0:4000/17/06/magic-mirror-sensors">&lt;p&gt;Most builds suggest going for a https://www.amazon.com/dp/B01E5ZBO96/ref=cm_sw_r_cp_dp_T2_pOGpzbARD0EQC&lt;/p&gt;</content><author><name></name></author><summary type="html">Most builds suggest going for a https://www.amazon.com/dp/B01E5ZBO96/ref=cm_sw_r_cp_dp_T2_pOGpzbARD0EQC</summary></entry><entry><title type="html">Magic Mirror: The pi</title><link href="http://0.0.0.0:4000/17/06/magic-mirror-the-pi" rel="alternate" type="text/html" title="Magic Mirror: The pi" /><published>2017-06-11T15:11:00-04:00</published><updated>2017-06-11T15:11:00-04:00</updated><id>http://0.0.0.0:4000/17/06/magic-mirror-the-pi</id><content type="html" xml:base="http://0.0.0.0:4000/17/06/magic-mirror-the-pi">&lt;p&gt;&lt;em&gt;This is part two of the Magic Mirror Project. For part 1, please click
+&lt;a href=&quot;/17/06/magic-mirror-intro-and-design&quot;&gt;here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Parts used:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B010Q57T02/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;A Class 10 32GB MicroSD card&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B01CD5VC92/ref=oh_aui_detailpage_o01_s01?ie=UTF8&amp;amp;psc=1&quot;&gt;Raspberry Pi Model 3 B&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B01L8DVOFM/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Micro USB power adapter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A random monitor, to test.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installing-an-os&quot;&gt;Installing an OS&lt;/h2&gt;
+
+&lt;p&gt;It’s finally arrived! Let me plug everything in and… nothing.&lt;/p&gt;
+
+&lt;p&gt;Oops, forgot to install an operating system. Lets install Raspbian… and sync error.&lt;/p&gt;
+
+&lt;p&gt;Uh, lets try NOOBS? Cool we booted up!&lt;/p&gt;
+
+&lt;p&gt;Ok, everything is set for Britian. Lets change everything real quick to the US.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT: I would &lt;em&gt;highly&lt;/em&gt; recommend you to delete the &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt; user before moving on and creating your own. It’s simply a vunerability, especially
+if you plan on going to a public (read: university) network. Check the “Preliminary Security” section for more info.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, you may have attempted to install the Magic Mirror² platform, like I did. Don’t. Go update your packages first:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;sudo apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
+sudo apt dist-upgrade &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get autoremove
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The second line is really optional, but it’s a fresh system, so a full upgrade couldn’t hurt.&lt;/p&gt;
+
+&lt;p&gt;Now for the &lt;a href=&quot;https://magicmirror.builders&quot;&gt;MagicMirror² platform&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;magicmirror&quot;&gt;MagicMirror²&lt;/h2&gt;
+&lt;p&gt;The command on their front page worked for the most part, as it threw an error for the optional install of pm2.
+It looks like there was a typo—an extra newline typed. It’s an easy fix, just installing pm2 and running the line found in the installer,
+but I’ll post it here for visibility:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;sudo npm install -g pm2
+sudo su -c &lt;span class=&quot;s2&quot;&gt;&quot;env path=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:/usr/bin pm2 startup systemd -u pi --hp /home/pi&quot;&lt;/span&gt;
+pm2 start ~/MagicMirror/installers/pm2_MagicMirror.json
+pm2 save
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Note that if you changed the default user from &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt;, you’ll need to change the &lt;code class=&quot;highlighter-rouge&quot;&gt;-u&lt;/code&gt; flag and the home directory in the second line. At this point, our basic magic mirror worked. The monitor displayed the platform perfectly.&lt;/p&gt;
+
+&lt;p&gt;You’ll also need to edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;pm2_MagicMirror.json&lt;/code&gt; file. Unfortunately, the author hardcoded in the &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; directory to be &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt;. Fortunately, it’s a two line fix. Change that to your own user directory.&lt;/p&gt;
+
+&lt;p&gt;A quick reboot to check if everything went smoothly, and now I have a Mirror in portrait mode… except I now have no way to control it.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;panic&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Oh wait, I can just press &lt;code class=&quot;highlighter-rouge&quot;&gt;alt&lt;/code&gt; and go to Window &amp;gt; minimize. (&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + M&lt;/code&gt; works too)&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/panic&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;You could call setting up the RPi (Raspberry Pi) done, but there’s a few tweaks that you can do to make it a little better.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tweaks&quot;&gt;Tweaks&lt;/h2&gt;
+
+&lt;h3 id=&quot;hiding-the-mouse-cursor-after-a-short-period&quot;&gt;Hiding the mouse cursor after a short period&lt;/h3&gt;
+&lt;p&gt;I noticed that the mouse would still show up after reboot. There’s also a quick fix for that:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;sudo apt install unclutter
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Then add the line &lt;code class=&quot;highlighter-rouge&quot;&gt;@unclutter -idle 1 -root&lt;/code&gt; to /etc/xdg/lxsession/LXDE/autostart. You can change the idle timeout parameter
+if you so desire (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;-idle 0&lt;/code&gt; instantly hides, while &lt;code class=&quot;highlighter-rouge&quot;&gt;-idle 2.5&lt;/code&gt; hides after 2.5 seconds).&lt;/p&gt;
+
+&lt;p&gt;I personally left it at 1 second, because it’s long enough where I can develop stuff on the magic mirror (and not wonder why my mouse disappears if I stop moving it), and short enough that it won’t be noticed by normal usage. Well, you shouldn’t have a mouse or keyboard attached to it anyways, so…&lt;/p&gt;
+
+&lt;h3 id=&quot;changing-the-orientation&quot;&gt;Changing the orientation&lt;/h3&gt;
+&lt;p&gt;You can change the orientation to a portrait mode if you wish by editing &lt;code class=&quot;highlighter-rouge&quot;&gt;/boot/config.txt&lt;/code&gt;]
+and writing &lt;code class=&quot;highlighter-rouge&quot;&gt;display_rotate=1&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;display_rotate=3&lt;/code&gt;, depending which way you need to rotate it. I would highly recommend doing this when
+testing any new modules.&lt;/p&gt;
+
+&lt;h3 id=&quot;preliminary-security&quot;&gt;Preliminary Security&lt;/h3&gt;
+&lt;p&gt;Well, every RPi comes with the user &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt; by default. This is a major security flaw. Lets fix this.&lt;/p&gt;
+
+&lt;h4 id=&quot;adding-a-new-user-and-deleting-the-pi-user&quot;&gt;Adding a new user and deleting the &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt; user&lt;/h4&gt;
+&lt;p&gt;I followed &lt;a href=&quot;http://raspi.tv/2012/how-to-create-a-new-user-on-raspberry-pi&quot;&gt;this&lt;/a&gt; guide. It’s a little verbose, but it’s a great introductionary
+guide.&lt;/p&gt;
+
+&lt;p&gt;However, I had trouble deleting &lt;code class=&quot;highlighter-rouge&quot;&gt;pi&lt;/code&gt;. I was able to solve this by following &lt;a href=&quot;https://unix.stackexchange.com/questions/287620/why-failing-to-delete-user-in-raspbian&quot;&gt;this SO&lt;/a&gt; post. Due to it’s length, I’ve
+reposted the commands below:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;sudo systemctl stop autologin@tty1
+
+&lt;span class=&quot;c&quot;&gt;# Make sure that no process is being run by the user pi.&lt;/span&gt;
+ps -fu pi
+
+sudo deluser -remove-home pi
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, set to auto-boot to the new user by adding &lt;code class=&quot;highlighter-rouge&quot;&gt;autologin-user=YOUR_USER&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/lightdm/lightdm.conf&lt;/code&gt;. Reboot, and you’re all set!&lt;/p&gt;
+
+&lt;h4 id=&quot;requiring-sudo-password-prompt&quot;&gt;Requiring sudo password prompt&lt;/h4&gt;
+&lt;p&gt;You may have noticed that there’s no password prompt for &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; commands. If that scares you (it should since your pi auto-logins), there’s
+an easy way to fix it.&lt;/p&gt;
+
+&lt;p&gt;First, run &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo visudo&lt;/code&gt;. then comment out the following:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;%sudo &lt;span class=&quot;nv&quot;&gt;ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;ALL:ALL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ALL
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;By commenting it out (with a &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt;), every non-root user will be prompted to enter their password.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is part two of the Magic Mirror Project. For part 1, please click here.</summary></entry><entry><title type="html">Magic Mirror: Intro and design considerations</title><link href="http://0.0.0.0:4000/17/06/magic-mirror-intro-and-design" rel="alternate" type="text/html" title="Magic Mirror: Intro and design considerations" /><published>2017-06-11T15:11:00-04:00</published><updated>2017-06-11T15:11:00-04:00</updated><id>http://0.0.0.0:4000/17/06/magic-mirror-intro-and-design</id><content type="html" xml:base="http://0.0.0.0:4000/17/06/magic-mirror-intro-and-design">&lt;p&gt;Summer has arrived. High school just finished, and I need something to do to 
+fill the time.&lt;/p&gt;
+
+&lt;p&gt;Why not build a magic mirror? It’s should be relatively cheap, fun, and I get 
+to learn the raspberry pi at the same time. Plus, it shouldn’t take too long to 
+complete (Soon™).&lt;/p&gt;
+
+&lt;h2 id=&quot;design-considerations&quot;&gt;Design considerations&lt;/h2&gt;
+
+&lt;p&gt;Weight, size, and functionality all take a critical part when the physical part 
+of the mirror. Since I’m heading to college, I’d love to find a way to mount 
+the mirror safely and securely without damaging the walls lest face the wraith 
+of a $900 repair bill.&lt;/p&gt;
+
+&lt;p&gt;If everything goes to plan, I should have a large full touch screen mirror.&lt;/p&gt;
+
+&lt;p&gt;In regards to electronics hardware, there’s an entire platform for magic
+mirrors under the raspberry pi. I could alternatively write my own, but there 
+seems no need to. Plus, I’ll likely be contributing to the modules.&lt;/p&gt;
+
+&lt;p&gt;Weight is a very tricky concern. From previous builds on the internet, it appears that the 
+frame and mirror are the heaviest components, as the frame needs to hold the heavy glass. At
+the same time, however, I do want it to be large–greater than 25” diagonally.&lt;/p&gt;
+
+&lt;p&gt;At this point, I started to do some searching. Amazon was no good, since at best
+I would like to purchase a used monitor, and the used market there as good. Craigslist didn’t
+even have monitors near me, so that was out. I eventually turned to eBay, and despite my
+reservations from buying there, I eventually looked at some of their 27” monitors.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-monitor&quot;&gt;The monitor&lt;/h3&gt;
+
+&lt;p&gt;You could buy a new 27” thin monitor for around $150 there. At first, that sounded like a great
+deal. But a major concern was the orientation of the I/O. They were facing perpendicular to the
+screen! Unless you want to buy right angle connecters for everything, you’d best be find another
+monitor. That being said, however, I did manage to find a 27” monitor with I/O parallel to the
+screen, but they were bulky—around 2 inches thick. That was no go, either.&lt;/p&gt;
+
+&lt;p&gt;So I turned to parts. If I got the parts indiviually, I would be able to not only cut down on
+plastic thickness, but weight as well. I was able to find a &lt;a href=&quot;http://www.ebay.com/itm/222412534424&quot;&gt;27” 1080p LCD Panel&lt;/a&gt;
+and a &lt;a href=&quot;http://www.ebay.com/itm/121059321784&quot;&gt;controller kit&lt;/a&gt; that worked with the panel. Note that if you’re buying a different
+panel, you’ll need to contact the controller seller to make sure that they’re compatible! I
+contaced the controller seller and they said that that panel was ok. Alright, so add both to
+cart, and boom, the controller kit will take more than two weeks to arrive.&lt;/p&gt;
+
+&lt;p&gt;Wait, what?&lt;/p&gt;
+
+&lt;p&gt;Well, one guy reviewed the product and said “Fast delivery”. So hopefully we’ll get it soon.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-glass&quot;&gt;The glass&lt;/h3&gt;
+
+&lt;p&gt;There are two primary materials that are considered for this: Acrylic and glass. With wieght in
+mind, my first idea was to go to acrylic, but after some research, I soon found out that acryllic
+can warp if it’s thin and large enough. Plus, it would scratch and dent, and considering how I’m
+going into a rugged environment, I think it would be better to just leave it to glass.&lt;/p&gt;
+
+&lt;p&gt;I was able to find a relatively nice deal from &lt;a href=&quot;https://www.twowaymirrors.com/smart-mirror/#34131241324312&quot;&gt;Two Way Mirrors&lt;/a&gt;. They not only sold 70%
+reflective and 30% transparent glass (which was the best ratio according to the internet), they
+also had a pretty nice deal: $169.95 for a 20”x24” sheet. Considering how the price was originally
+$250, I don’t think I could find a better deal. It’s also a little bigger than the screen I bought,
+which means that I have some space for adjusting and adding additional sensors.&lt;/p&gt;</content><author><name></name></author><summary type="html">Summer has arrived. High school just finished, and I need something to do to fill the time.</summary></entry></feed>
