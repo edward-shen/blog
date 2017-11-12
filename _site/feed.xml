@@ -1,5 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-11-11T15:38:30-05:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Anonymous Lambda</title><subtitle>A blog about maximizing assertions, minimizing randomness, and then doing none of that.
-</subtitle><entry><title type="html">Jekyll Plugin: Github Cards</title><link href="http://0.0.0.0:4000/17/10/github-cards" rel="alternate" type="text/html" title="Jekyll Plugin: Github Cards" /><published>2017-10-12T21:54:00-04:00</published><updated>2017-10-12T21:54:00-04:00</updated><id>http://0.0.0.0:4000/17/10/github-cards</id><content type="html" xml:base="http://0.0.0.0:4000/17/10/github-cards">&lt;p&gt;I need to make a confession: I finished the magic mirror back in mid-August. I’ll be posting the final update to my mirror whenever I have time (as you can see I am &lt;em&gt;terrible&lt;/em&gt; with this concept of blogging), but for now I want to write a post-mortem, to say, of the Jekyll plugin I just made:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-11-12T02:29:39-05:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Anonymous Lambda</title><subtitle>A blog about maximizing assertions, minimizing randomness, and then doing none of that.
+</subtitle><entry><title type="html">Email is hard</title><link href="http://0.0.0.0:4000/17/11/free-email-is-hard" rel="alternate" type="text/html" title="Email is hard" /><published>2017-11-12T00:44:00-05:00</published><updated>2017-11-12T00:44:00-05:00</updated><id>http://0.0.0.0:4000/17/11/free-email-is-hard</id><content type="html" xml:base="http://0.0.0.0:4000/17/11/free-email-is-hard">&lt;p&gt;Correction: &lt;em&gt;free&lt;/em&gt; email is hard.&lt;/p&gt;
+
+&lt;p&gt;You’d think given the availibitily of creating a custom webiste these days that setting up email shouldn’t be too difficult either. Just buy a domain, click on “yes I want to have email” and boom, done.&lt;/p&gt;
+
+&lt;p&gt;Turns out, it’s not that easy. The registrar I registered my domain with, NameCheap, unfortunately don’t provide free full email services, like Google domains. They only provide email forwarding, and you can’t even send emails from the email address you make.&lt;/p&gt;
+
+&lt;p&gt;But ok, fine, I can deal with that. After all, I just needed it for my resumes. Interviewers probably don’t mind if they get a mail from a different address so long as there’s context, which all mail services provide.&lt;/p&gt;
+
+&lt;p&gt;In comes Cloudflare’s free service, which lets me use HTTPS with Github pages for custom domains. Yay! No more unsecure website!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;lt;aside&amp;gt;&lt;/strong&gt;&lt;br /&gt;
+If you are looking for a way to encrypt your webpage, and you serve it from your own server, perhaps consider &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt;. They’re a nonprofit whose goal is to provide the internet with SSL/TLS Certs.&lt;br /&gt;
+&lt;strong&gt;&amp;lt;/aside&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyways, back to the topic at hand.&lt;/p&gt;
+
+&lt;p&gt;Eventually I wanted to find an actual solution to this issue. After discussion with some friends, I was told that &lt;strong&gt;1)&lt;/strong&gt; I could just create my own mail server (but good luck getting it trusted by anyone and not sent to spam) or &lt;strong&gt;2)&lt;/strong&gt; I could just shell out 5 dollars a month. It’s just $5, after all.&lt;/p&gt;
+
+&lt;p&gt;Being the &lt;del&gt;cheap&lt;/del&gt; frugal person I am, there’s gotta be a better way.&lt;/p&gt;
+
+&lt;p&gt;Turns out, you need to jump through some loops before you can get a reliable free mail service that provides sending and recieving through addresses, but it’s certainly free&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mailgun.com/&quot;&gt;Mailgun&lt;/a&gt; is a website primarily oriented for developers trying to implemt some form of mailing list-esque features in their clients. While not directly meant for personal use, you can certainly take advantage of their features.&lt;/p&gt;
+
+&lt;p&gt;They allow free outbound emails up to 100,000/month, which, for personal email, more than anyone would reasonably ever use. Setting it up was relatively easy (despite some minor setbacks and following &lt;a href=&quot;https://www.chrisanthropic.com/blog/2014/mail-forwarding-with-mailgun-and-cloudflare/&quot;&gt;this guide&lt;/a&gt;), it was pretty painless. Plus, Cloudflare’s DNS propagated &lt;em&gt;really&lt;/em&gt; quickly, compared to Namecheap’s. It took less than a minute for Cloudflare’s records to be updated, which was really impressive considering how it can take up to two days for DNS records to be updated.&lt;/p&gt;
+
+&lt;p&gt;The only caveate that I have with Mailgun is that it requries your CC info on file. It’s reasonable, but at the same time, I’d rather not perfer to do so.&lt;/p&gt;
+
+&lt;p&gt;Mailgun also comes with an additional nice feature – I can see when my recruitors actaully open up my emails.&lt;/p&gt;
+
+&lt;p&gt;And this is exactly why you disable images, kids.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;It just may or may not require an credit card on file.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Correction: free email is hard.</summary></entry><entry><title type="html">Jekyll Plugin: Github Cards</title><link href="http://0.0.0.0:4000/17/10/github-cards" rel="alternate" type="text/html" title="Jekyll Plugin: Github Cards" /><published>2017-10-12T21:54:00-04:00</published><updated>2017-10-12T21:54:00-04:00</updated><id>http://0.0.0.0:4000/17/10/github-cards</id><content type="html" xml:base="http://0.0.0.0:4000/17/10/github-cards">&lt;p&gt;I need to make a confession: I finished the magic mirror back in mid-August. I’ll be posting the final update to my mirror whenever I have time (as you can see I am &lt;em&gt;terrible&lt;/em&gt; with this concept of blogging), but for now I want to write a post-mortem, to say, of the Jekyll plugin I just made:&lt;/p&gt;
 
 &lt;section class=&quot;gh-cards&quot;&gt;
 
